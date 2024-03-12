@@ -84,13 +84,3 @@ body{
   cursor: pointer;
 }
 
-.slider::-moz-range-thumb {
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  background: #019f55;
-  cursor: pointer;
-}
-.slidecontainer{
-    margin-bottom: 0px;
-}
