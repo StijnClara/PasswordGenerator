@@ -16,8 +16,8 @@
     <button onclick="createPassword()"><img src="images/generate.png">Generate Password</button>
 </div>
 <script>
-    const passwordBox = document.getElementById("password");
-    const length = 16;
+   const passwordBox = document.getElementById("password");
+    let length = 12;
 
     const upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     const lowerCase = "abcdefghijklmnopqrstuvwxyz";
@@ -37,7 +37,13 @@ function createPassword(){
 function copyPassword(){
     passwordBox.select();
     document.execCommand("copy");
-}
+    }
+function PasswordLength() {
+        
+        var val = document.getElementById("slider").value //gets the oninput value
+        document.getElementById('output').innerHTML = val //displays this value to the html page
+        length = val;
+    }
 
 </script>
 </body>
